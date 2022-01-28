@@ -97,6 +97,15 @@
 	</div>
 
 	<script>
+	/* stop animation */
+	$(document).ready(function() {
+		if ( $("#loading").hasClass( "hidden" ) ) {
+  			$( "#loading" ).removeClass("hidden");
+		} else {
+  			$( "#loading" ).addClass("hidden");
+		}
+	});
+
 	/* hide/show */
 	$( "#showToggle" ).click(function() {
   		$( "#show" ).toggle(1000);
