@@ -127,7 +127,7 @@ h2, h3 {
 }
 
 .parallax {
-    background-image: url('Goats/Domestic_goat_kid_in_capeweed%20TRANS.png');
+    background-image: url('/Goats/Domestic_goat_kid_in_capeweed%20TRANS.png');
     min-height: 500px; 
     background-attachment: fixed;
     background-position: center;
