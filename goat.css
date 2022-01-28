@@ -312,6 +312,8 @@ aside ul li {
 
 .bg-trans-white, footer {background-color: rgba(255,255,255,0.7);}
 
+.hidden {display: none;}
+
 .paused {
   animation-play-state: paused;
 }
@@ -319,16 +321,15 @@ aside ul li {
 #loading {
 	display: block;	
 	top: 10px;
-	transition: all 15s ease;
 	position: absolute;
     z-index: 4;
 	left: 0;
-	animation: shake 1s linear 0s infinite, moveLeftToRight 15s linear 0s 1;
+	animation: shake 1s linear 0s infinite, moveLeftToRight 15s linear 0s infinite;
 }
 
 @keyframes moveLeftToRight {
-  0% { left: -300px; }
-  100% { left: 100%; }
+  0% { left: 30px; }
+  100% { left: 95%; }
 }
 
 @keyframes shake {
