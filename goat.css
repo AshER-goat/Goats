@@ -1,0 +1,356 @@
+* {box-sizing: border-box}
+
+html {font-size: 18px;}
+
+body {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, footer p {font-family: 'Fugaz One', cursive;}
+
+h1 {font-size: 5.9vw;}
+
+h2 {font-size: 3.0vh;}
+
+p {text-align: left;}
+
+p, li, cite a {font-size: 2.75vmin;}
+
+header {
+    z-index: 3;
+    background-color: #812c2c;
+}
+
+nav {
+    font-family: 'Fugaz One', cursive;
+    background-color: #5f2121;
+}
+
+.secNav {
+    background-color: BurlyWood;
+    border-bottom: 2px solid brown;
+    font-family: 'Fugaz One', cursive;
+}
+
+#navSocialSearch {background-color: #deb887;}
+
+nav .navbar-nav .nav-item .nav-link {color: #e2683c;}
+
+nav .navbar-nav .active .nav-link {color: coral;}
+
+ul li, ol li {overflow-wrap: break-word;}
+
+#show {
+    width: 100%;
+    background-color: oldlace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#show h4 {
+    width: 100%;
+    color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 4px 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#show hr {
+    width: 100%;
+    height: 1px;
+    color: black;
+}
+
+header h1, h1 {
+    font-family: 'Fugaz One', cursive;
+    color: white;
+    padding: 16px;
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    letter-spacing: 12px;
+	background: linear-gradient(to top, brown 0%, #deb887 25%, linen 50%, #deb887 75%, brown 100%);
+	border: 3px solid #812c2c;
+	border-radius: 8px;
+}
+
+h2, h3 {
+	color: white;
+    margin: 8px 0;
+    padding: 2%;
+	text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-color: #812c2c;
+	border: 3px solid rgb(230, 230, 230);
+	border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 1px 2px rgba(0,0,0,0.9);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 8px;    
+	background-color: rgba(255,255,255,0.3);
+	border: 3px solid #812c2c;
+    outline: 1px solid black;
+}
+
+#mainGoatContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#mainGoat {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#parContainer {
+	position: relative;
+	width: 100%;
+	min-height: 500px;
+	top: 0;
+	left: 0;
+	background-color: white;
+}
+
+.parallax {
+    background-image: url('C:/Users/Ashleigh/Desktop/Ash%20stuff/Not%20Art/OTHER/Web_design_and_Game_design/Site%20Templates/Goats/Domestic_goat_kid_in_capeweed%20TRANS.png');
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#text_special {
+	text-align: justify;
+	line-height: 35px;
+}
+
+a:link {color: darkred;}
+
+a:visited {color: darkred;}
+
+a:hover {color: orange;}
+
+a:active {color: #0077b5;}
+
+.btn-green {
+    color: white;
+    background-color: seagreen;
+}
+
+.btn-green:hover {
+    color: white;
+    background-color: #217847;
+}
+
+.btn-red {
+    color: white;
+    background-color: indianred;
+}
+
+.btn-red:hover {
+    color: white;
+    background-color: #bd3d3d;
+}
+
+.btn-blue {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.btn-blue:hover {
+    color: white;
+    background-color: #4b7cd8;
+}
+
+.blue {
+    text-decoration: none;
+    color: #0077b5;
+}
+
+.Instagram {
+    text-decoration: none;
+    background-color: #bc2a8d;
+    border-radius: 2px;
+    padding: 3px;
+    color: aliceblue;
+}
+
+.Facebook {
+    text-decoration: none;
+    background-color: #3b5998;
+    border-radius: 2px;
+    padding: 3px;
+    color: aliceblue;
+}
+
+.Deviantart {
+    text-decoration: none;
+    background-color: #05cc46;
+    border-radius: 2px;
+    padding: 3px 6px;
+    color: aliceblue;
+}
+
+.linkedin a {
+    text-decoration: none;
+    background-color: #0077b5;
+    border-radius: 2px;
+    padding: 1px 4px;
+    color: aliceblue;
+}
+
+.blue:hover {color: #4b7cd8;}
+
+.linkedin a:hover {
+    background-color: #4b7cd8;
+    color: aliceblue;
+}
+
+.sticky {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    align-content: baseline;
+    margin: 12px 0;
+    position: relative;
+}
+
+aside ul {padding: 4px 0;}
+
+aside ul li {
+    text-align: center;
+    margin: 0 8px;
+}
+
+.list_bg_special {
+    background-color: BurlyWood;
+    color: black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.ordered_list_special {
+    list-style-type: upper-roman;	
+    list-style-position: inside;
+	padding: 4%;
+    margin: 0 20px;    
+	display:inline-block;	
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.9), 0 1px 2px rgba(0,0,0,0.9);
+}
+
+.ordered_list_special li {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 35px;
+	text-align: left;
+	width: 100%;
+	background-color: transparent;
+	border: none;
+    color: black;
+	margin: 4px 0;
+	padding: 0;
+    box-shadow: none;	
+}
+
+.ordered_list_special li:hover {
+    background-color: transparent;
+}
+
+.ordered_list_special li:nth-child(even) {
+    color: salmon;
+}
+
+.list_special ul {
+	list-style-type: none;	
+	padding: 4%;
+	line-height: 25px;
+}
+
+.list_special li {
+    text-align: center;
+	font-family: monospace;
+	background-color: #e5c49a;
+	border-radius: 5px;
+    color: black;
+	margin: 4px 0;
+	padding: 6%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.5);	 	
+}
+
+.list_special li:hover {
+    color: white;
+    background-color: peru;
+	border-radius: 3px;
+}
+
+.bg-trans {
+    background-color: hsla(17, 71%, 47%, 0.5);
+    padding: 4%;
+}
+
+.bg-trans-white, footer {background-color: rgba(255,255,255,0.7);}
+
+.paused {
+  animation-play-state: paused;
+}
+	
+#loading {
+	display: block;	
+	top: 10px;
+	transition: all 15s ease;
+	position: absolute;
+    z-index: 4;
+	left: 0;
+	animation: shake 1s linear 0s infinite, moveLeftToRight 15s linear 0s 1;
+}
+
+@keyframes moveLeftToRight {
+  0% { left: -300px; }
+  100% { left: 100%; }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+footer p {
+	color:black;
+	font-weight: bold;
+    padding: 4%;
+	margin: 0px auto;
+	width: 80%;
+	text-align: center;
+	background-color: trensparent;
+}
