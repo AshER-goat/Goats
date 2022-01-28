@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<title>Goats - Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex">
+	<meta name="description" content="..." />
+	<meta name="keywords" content="..." />
+	<meta property="og:title" content="Goats | Home"/>
+	<meta property="og:site_name" content="Goats.html" />
+	<meta property="og:image" content="./Goats/goat.png"/>
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="goat.css" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="./Goats/goat.png" sizes="16x16">
+	<link rel="canonical" href="Goats.html"/>
+</head>
+<body id="parContainer">
+
+	<header id="header" class="container-fluid px-0">
+		<h1>GOATS!</h1>
+		<nav class="navbar navbar-expand-md navbar-dark px-4">
+			<a class="navbar-brand p-3" href="#">
+				<img class="bg-light p-2 rounded" src="./Goats/goat.png" width="65" height="auto" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="d-flex flex-wrap justify-content-between align-content-center">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="showToggle" role="button">
+							Facts
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<div id="navSocialSearch" class="d-flex justify-content-end align-items-center rounded p-2">
+						<a href="#">
+							<i class="fa fa-instagram mx-2 Instagram"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-facebook-official mx-2 Facebook"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-deviantart mx-2 Deviantart"></i>
+						</a>
+						<span class="mx-2 mx-2 linkedin">
+							<a href="#">in</a>
+						</span>
+						<form class="d-flex justify-content-center">
+							<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+							<button class="btn btn-blue btn-outline-secondary" type="submit">Search</button>
+						</form>	
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div id="show" style="display: none">
+			<h4>Facts</h4>
+			<a href="#" class="mx-1">History</a>
+			<a href="#" class="mx-1">Anatomy and health</a>
+			<a href="#" class="mx-1">Reproduction</a>
+			<a href="#" class="mx-1">Diet</a>
+			<a href="#" class="mx-1">Behavior</a>
+			<a href="#" class="mx-1">Diseases</a>
+			<a href="#" class="mx-1">Life expectancy</a>
+			<a href="#" class="mx-1">Agriculture</a>
+			<a href="#" class="mx-1">As pets</a>
+			<a href="#" class="mx-1">Breeds</a>
+			<a href="#" class="mx-1">Religion, mythology, and folklore</a>
+			<hr />
+			<a href="#" class="mx-1">Community</a>
+			<a href="#" class="mx-1">Q &amp; A</a>
+		</div>
+	</header>
+
+	<img id="loading" src="./Goats/goat_animation.png" style="width: 100px;height: 100px">
+	<div class="secNav p-2">
+		<button onclick="myPlayFunction()" class="btn btn-green btn-outline-dark">Walk goat</button>
+		<button onclick="myPauseFunction()" class="btn btn-red btn-outline-dark">Stop goat</button>
+	</div>
+
+	<script>
+	/* hide/show */
+	$( "#showToggle" ).click(function() {
+  		$( "#show" ).toggle(1000);
+	});
+
+  	/* Toggle Animations */
+	function myPlayFunction() {
+    	document.getElementById("loading").style.WebkitAnimationPlayState = "running"; // Code for Chrome, Safari, and Opera
+    	document.getElementById("loading").style.animationPlayState = "running";
+	}
+
+	function myPauseFunction() {
+    	document.getElementById("loading").style.WebkitAnimationPlayState = "paused"; // Code for Chrome, Safari, and Opera
+    	document.getElementById("loading").style.animationPlayState = "paused";
+	}
+	</script>
+
+	<script>
+	/* scroll */
+	$(function() {
+      $(window).on("scroll", function() {
+        if($(window).scrollTop() > 200) {
+            $("#header").addClass("sticky");
+        } else {
+           $("#header").removeClass("sticky");
+        }
+      });
+    });
+    if ( window.history.replaceState ) {
+       $('#header').removeClass("sticky");
+    };
+	</script>
+
+	<div class="parallax">
+		<div class="row">
+
+			<div class="col-lg-3 col-md-3 col-sm-12 my-2">
+				<aside class="container-fluid bg-trans">
+					<h2>Scientific Classification:</h2>
+					<div class="list_bg_special">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Kingdom: Animalia</li>
+							<li class="list-group-item">Phylum: Chordata</li>
+							<li class="list-group-item">Class: Mammalia</li>
+							<li class="list-group-item">Order: Artiodactyla</li>
+							<li class="list-group-item">Family: Bovidae</li>
+							<li class="list-group-item">Subfamily: Caprinae</li>
+							<li class="list-group-item">Genus: Capra</li>
+							<li class="list-group-item">Species: C. aegagrus</li>
+							<li class="list-group-item">Subspecies: C. a. hircus</li>
+						</ul>
+					</div>			
+					<h2>Trinomial Name:</h2>
+					<div class="list_bg_special">			
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Capra aegagrus hircus</li>
+						</ul>
+					</div>
+					<h2>Classic Goat Names</h2>
+					<div class="list_bg_special">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Billy</li>
+							<li class="list-group-item">Nanny</li>
+							<li class="list-group-item">Billy Goat Gruff</li>
+							<li class="list-group-item">Pan</li>
+							<li class="list-group-item">Lambert</li>
+							<li class="list-group-item">Wooly</li>
+							<li class="list-group-item">Bo Peep</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+	
+			<div id="mainGoatContainer" class="col-lg-6 col-md-6 col-sm-12 my-2 main">
+				<section class="container-fluid bg-trans">
+					<h1>Goats!</h1>
+					<br />
+					<div class="bg-trans-white p-3">
+						<img id="mainGoat" src="./Goats/goat.png" width="95px">
+						<p id="text_special">The domestic goat or simply <i>goat</i> (Capra hircus) is a domesticated species of 
+							goat-antelope typically kept as livestock. It was domesticated from the wild goat (C. aegagrus) 
+							of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the 
+							subfamily Caprinae, meaning it is closely related to the sheep. There are over 300 distinct breeds 
+							of goat. It is one of the oldest domesticated species of animal, according to archaeological 
+							evidence that its earliest domestication occurred in Iran at 10,000 calibrated calendar years 
+							ago.
+						</p>
+						<p id="text_special">Goats have been used for milk, meat, fur, and skins across much of the world. 
+							Milk from goats is often turned into goat cheese.
+						</p>
+						<p id="text_special">Female goats are referred to as does or nannies, intact males are called bucks 
+							or billies, and juvenile goats of both sexes are called kids. Castrated males are called wethers. 
+							While the words hircine and caprine both refer to anything having a goat-like quality, hircine is 
+							used most often to emphasize the distinct smell of domestic goats.
+						</p>
+						<p id="text_special">In 2011, there were more than 924 million goats living in the world, according 
+							to the UN Food and Agriculture Organization.
+						</p>
+						<cite> - Wikipedia.com</cite>
+					</div>
+				</section>
+			</div>
+	
+			<div class="col-lg-3 col-md-3 col-sm-12 my-2">
+				<aside class="container-fluid bg-trans">
+					<h3>Facts</h3>
+					<div class="container-fluid">
+						<ul class="list_special list-group">
+							<li class="list-group-item">History</li>
+							<li class="list-group-item">Anatomy and health</li>
+							<li class="list-group-item">Reproduction</li>
+							<li class="list-group-item">Diet</li>
+							<li class="list-group-item">Behavior</li>
+							<li class="list-group-item">Diseases</li>
+							<li class="list-group-item">Life expectancy</li>
+							<li class="list-group-item">Agriculture</li>
+							<li class="list-group-item">As pets</li>
+							<li class="list-group-item">Breeds</li>
+							<li class="list-group-item">Religion, mythology, and folklore</li>
+						</ul>
+					</div>
+				</aside>	
+			</div>	
+		</div>
+	
+		<div class="row">
+	
+			<div class="col-lg-3 col-md-3 col-sm-12 my-2">
+				<aside class="container-fluid bg-trans">
+					<h3>Links</h3>
+					<div class="container-fluid">
+						<ul class="list_special list-group">
+							<li class="list-group-item">Instagram</li>
+							<li class="list-group-item">Facebook</li>
+							<li class="list-group-item">deviantart</li>
+							<li class="list-group-item">Linkedin</li>
+							<li class="list-group-item">Lovegoats.com</li>
+							<li class="list-group-item">BillyBobGoesWest.com</li>
+							<li class="list-group-item">Goatsinmythology.com</li>
+							<li class="list-group-item">Goatvideos.com</li>
+						</ul>	
+					</div>	
+				</aside>		
+			</div>	
+			
+			<div class="col-lg-6 col-md-6 col-sm-12 my-2 main">
+				<section class="container-fluid bg-trans">
+					<div class="bg-trans-white p-3">
+						<h3>15 Amazing Things You Probably Didn't Know About Goats</h3> 
+						<cite>-
+							By<a href="http://mentalfloss.com/article/61542/15-amazing-things-you-probably-didnt-know-about-goats" alt="goatsmf"> MENTALFLOSS .COM  (June 13, 2017)</a>
+						</cite>
+						<ol class="ordered_list_special mt-3">
+							<li>GOATS WERE ONE OF—IF NOT THE—FIRST ANIMALS TO BE DOMESTICATED.</li>
+							<li>GOATS WERE AMONG THE FIRST ANIMALS TO BE BROUGHT TO AMERICA.</li>
+							<li>GOAT POPULARITY SURGED FOLLOWING THE 1904 WORLD'S FAIR IN ST. LOUIS.</li>
+							<li>GIVING BIRTH IS CALLED “KIDDING.”</li>
+							<li>GOATS DON'T HAVE TEETH ON THEIR UPPER JAW.</li>
+							<li>GOATS HAVE RECTANGULAR PUPILS.</li>
+							<li>GOATS HAVE FOUR STOMACHS.</li>
+							<li>GOAT'S MILK IS THE MOST POPULAR KIND OF MILK WORLDWIDE.</li>
+							<li>THERE'S GOOD REASON TO DRINK GOAT'S MILK, TOO.</li>
+							<li>“FAINTING” GOATS DON'T REALLY FAINT, BUT THEY SURE LOOK LIKE THEY DO.</li>
+							<li>ABRAHAM LINCOLN LOVED GOATS.</li>
+							<li>CASHMERE COMES FROM GOATS.</li>
+							<li>ACCORDING TO LEGEND, GOATS DISCOVERED COFFEE.</li>
+							<li>GOATS HAVE INCREDIBLE AGILITY AND BALANCE.</li>
+							<li>GOATS HAVE ACCENTS.</li>
+						</ol>
+					</div>
+				</section>
+			</div>
+	
+			<div class="col-lg-3 col-md-3 col-sm-12 my-2">
+				<aside class="container-fluid bg-trans">
+					<h3>Get To Know Proud Owners</h3>
+					<div class="container-fluid">
+						<ul class="list_special list-group">
+							<li role="button" class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal_Community">
+							Community
+							</li>
+							<li role="button" class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal_Q_A">
+							Q &amp; A
+							</li>
+						</ul>	
+						<h2>Contact</h2>
+					</div>
+					<div class="list_bg_special">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">1234 S. Poo st.</li> 
+							<li class="list-group-item">Tampa, FL USA</li>
+						</ul>
+					</div>	
+				</aside>			
+			</div>
+		</div>
+
+		<!-- modal_Community -->
+		<div class="modal fade" id="modal_Community" tabindex="-1" role="dialog" aria-labelledby="modal_Community" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  	<div class="modal-content">
+					<div class="modal-header">
+				  		<h5 class="modal-title" id="modal_CommunityLabel">Modal title</h5>
+				  		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+				  		</button>
+					</div>
+					<div class="modal-body">
+				  		<h4>Community</h4>
+					  	<p>Want to join the Goat-lover community? <a href="#">Click Here</a></p>
+					</div>
+					<div class="modal-footer">
+				  		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				  		<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- modal_Q_A -->
+		<div class="modal fade" id="modal_Q_A" tabindex="-1" role="dialog" aria-labelledby="modal_Q_A" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+			  	<div class="modal-content">
+					<div class="modal-header">
+				  		<h5 class="modal-title" id="modal_Q_ALabel">Modal title</h5>
+				  		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+				  		</button>
+					</div>
+					<div class="modal-body">
+				  		<h4>Q &amp; A</h4>
+					  	<p>Have any goat related questions that weren't answered on this site? <a href="#">Click Here</a></p>
+					</div>
+					<div class="modal-footer">
+				  		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				  		<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	   <footer>
+			<div>
+				<p>Ash E.R. &copy;2018, &copy;2022</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
